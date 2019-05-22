@@ -14,8 +14,24 @@ and open the template in the editor.
     </head>
     <body>
         <?php
+            //loading only one object
+            //$usuario = new Usuario();
+            //$usuario->loadById(5);            
+            //echo $usuario;
+        
+            //loading all objects
+            //$list = Usuario::getList();
+            
+            //echo json_encode($list);
+        
+            //loading a list of users looking for login
+        
+            //$login = Usuario::search('h');
+            //echo json_encode($login);
+        
+            //loading an user looking for login and senha
             $usuario = new Usuario();
-            $usuario->loadById(5);
+            $usuario->login('lhsouzaa', 'jh2005');
             
             echo $usuario;
         ?>
