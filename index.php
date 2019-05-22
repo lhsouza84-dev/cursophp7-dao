@@ -14,11 +14,10 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-            $sql = new Sql();
+            $usuario = new Usuario();
+            $usuario->loadById(5);
             
-            $usuarios = $sql->select("SELECT * FROM tb_usuarios");
-            
-            echo json_encode($usuarios);
+            echo $usuario;
         ?>
     </body>
 </html>
