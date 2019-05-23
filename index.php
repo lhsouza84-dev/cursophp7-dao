@@ -26,14 +26,22 @@ and open the template in the editor.
         
             //loading a list of users looking for login
         
-            //$login = Usuario::search('h');
+            //$login = Usuario::search('a');
             //echo json_encode($login);
         
             //loading an user looking for login and senha
-            $usuario = new Usuario();
-            $usuario->login('lhsouzaa', 'jh2005');
+            //$usuario = new Usuario();
+            //$usuario->login('lhsouzaa', 'jh2005');
             
-            echo $usuario;
+            //echo $usuario;
+        
+            $aluno = new Usuario("teste", "newteste");
+            //$aluno->setDeslogin("aluno");
+            //$aluno->setDessenha("@lun0");
+
+            $aluno->insert();
+
+            echo $aluno;
         ?>
     </body>
 </html>
