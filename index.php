@@ -42,11 +42,16 @@ and open the template in the editor.
             //$aluno->insert();
 
             //echo $aluno;
-        
+            //updating an object
+            //$usuario = new Usuario();
+            ///$usuario->loadById(9);
+            //$usuario->update("professor", "teacher");
+            //$usuario->getList();
+            //deleting an object
             $usuario = new Usuario();
-            $usuario->loadById(9);
-            $usuario->update("professor", "teacher");
-            $usuario->getList();
+            $usuario->loadById(8);
+            $usuario->delete();
+            echo $usuario;
             
         ?>
     </body>
