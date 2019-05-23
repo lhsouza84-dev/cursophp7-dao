@@ -34,14 +34,20 @@ and open the template in the editor.
             //$usuario->login('lhsouzaa', 'jh2005');
             
             //echo $usuario;
-        
-            $aluno = new Usuario("teste", "newteste");
+            //inserting a new object
+            //$aluno = new Usuario("teste", "newteste");
             //$aluno->setDeslogin("aluno");
             //$aluno->setDessenha("@lun0");
 
-            $aluno->insert();
+            //$aluno->insert();
 
-            echo $aluno;
+            //echo $aluno;
+        
+            $usuario = new Usuario();
+            $usuario->loadById(9);
+            $usuario->update("professor", "teacher");
+            $usuario->getList();
+            
         ?>
     </body>
 </html>
